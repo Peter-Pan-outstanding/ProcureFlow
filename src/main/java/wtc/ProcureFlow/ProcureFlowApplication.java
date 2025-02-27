@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("wtc.ProcureFlow.mapper") // 扫描你的 Mapper 层所在包
+@MapperScan("wtc.ProcureFlow.mapper")
 public class ProcureFlowApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProcureFlowApplication.class,args);

@@ -10,7 +10,7 @@ import wtc.ProcureFlow.service.OutboundRequestService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/outbound")
+@RequestMapping("/outboundRequest")
 public class OutboundRequestController {
 
     @Resource
