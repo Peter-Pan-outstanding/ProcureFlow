@@ -21,10 +21,9 @@ public class OutboundRequestServiceImpl
 
     @Override
     public IPage<OutboundRequest> page(int current, int size, OutboundRequest outboundRequest) {
-        // 创建分页对象
+
         Page<OutboundRequest> page = new Page<>(current, size);
 
-        // 创建查询条件包装器
         QueryWrapper<OutboundRequest> queryWrapper = new QueryWrapper<>();
 
         if (outboundRequest != null) {
@@ -57,7 +56,6 @@ public class OutboundRequestServiceImpl
             }
         }
 
-        // 执行分页查询
         return mapper.selectPage(page, queryWrapper);
     }
 }

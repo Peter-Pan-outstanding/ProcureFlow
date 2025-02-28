@@ -7,5 +7,5 @@ import wtc.ProcureFlow.entity.OutboundRequest;
 
 public interface OutboundRequestService extends IService<OutboundRequest> {
 
-    public IPage<OutboundRequest> page(int current, int size,OutboundRequest outboundRequest);
+    IPage<OutboundRequest> page(int current, int size,OutboundRequest outboundRequest);
 }
